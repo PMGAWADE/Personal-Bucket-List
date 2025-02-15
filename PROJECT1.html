@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Bucket List</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Center content vertically */
+            height: 100vh; /* Full height of the viewport */
+            padding: 20px;
+            box-sizing: border-box; /* Include padding in width/height calculations */
+        }
+
+        /* Header styles */
+        header {
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 800px;
+        }
+
+        /* Main section styles */
+        main {
+            padding: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        /* Vertical list styles */
+        .vertical-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 40px;
+        }
+
+        .vertical-list li {
+            background: #ffffff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .vertical-list li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Icon styles */
+        .icon {
+            margin-right: 15px;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            color: white;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 800px;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .vertical-list {
+                width: 100%; /* Ensure full width on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Personal Bucket List</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Things I Want to Do</h2>
+            <ul class="vertical-list">
+                <li><span class="icon">⭐</span> Travel to the World</li>
+                <li><span class="icon">⭐</span> Meet the Prime Minister of India</li>
+                <li><span class="icon">⭐</span> Learn 4 new languages</li>
+                <li><span class="icon">✔️</span> Go on a safari in the jungle</li>
+                <li><span class="icon">✔️</span> Try bungee jumping</li>
+                <li><span class="icon">✔️</span> Write a letter to my future self</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Bucket List</p>
+    </footer>
+</body>
+</html>
